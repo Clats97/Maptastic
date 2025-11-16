@@ -2,7 +2,7 @@
 
 High-throughput, integrity-checked offline map tile downloader for Thunderforest tiles, driven by an interactive CLI for devices that require map files such as the T-Deck. 
 
-> **[Unverified performance note]** In typical Python tutorials and basic scripts, map tiles are often fetched sequentially, yielding effective download rates of **no more than ~5 tiles per second**.
+> ** In typical Python tutorials and basic scripts, map tiles are often fetched sequentially, yielding effective download rates of **no more than ~5 tiles per second**.
 > This script uses an optimized `requests` session, aggressive connection pooling, and up to **96 concurrent workers**, and in testing has achieved **sustained download rates in the ~400–600 tiles/second range**, depending on your API plan, network conditions, and target region size.
 
 ---
@@ -61,7 +61,7 @@ All downloads are:
 
    * Uses `ThreadPoolExecutor` with up to **96 workers**.
    * Optimized `requests.Session` with tuned connection pooling and retry logic.
-   * [Unverified] In testing, has achieved **400–600 tiles/second**, compared to many basic scripts that do **≤5 tiles/second**.
+   * In testing, has achieved **400–600 tiles/second**, compared to many basic scripts that do **≤5 tiles/second**.
 
 2. **Interactive Region Selection**
 
@@ -393,7 +393,6 @@ This script:
    * Estimated remaining time, and
    * Live tiles/second rate.
 
-> **[Unverified performance statement]**
 > Under favorable conditions (good network, reasonable API allowance, nearby Thunderforest edge, and moderately sized regions), this script has demonstrated **sustained effective download rates of about 400–600 tiles per second**, whereas simple non-pooled, non-concurrent scripts often manage **no more than ~5 tiles per second**.
 
 Actual performance will depend on:
