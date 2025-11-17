@@ -1,6 +1,6 @@
 # Maptastic Map Tile Downloader (Meshtastic/Meshcore)
 
-High-throughput, integrity-checked offline map tile downloader for Thunderforest tiles, driven by an interactive CLI for devices that require map files such as the T-Deck. 
+High-throughput, integrity-checked offline map tile downloader for Thunderforest tiles, driven by an interactive CLI for devices that require map files such as the T-Deck. There is an executable version for Windows in the releases section.
 
 > ** In typical Python tutorials and basic scripts, map tiles are often fetched sequentially, yielding effective download rates of **no more than ~5 tiles per second**.
 > This script uses an optimized `requests` session, aggressive connection pooling, and up to **96 concurrent workers**, and in testing has achieved **sustained download rates in the ~400–600 tiles/second range**, depending on your API plan, network conditions, and target region size.
